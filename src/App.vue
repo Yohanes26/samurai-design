@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+
 body {
   top: 0px;
   left: 0px;
@@ -20,14 +21,7 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f6f6; 
 }
 
-.routerLink {
-  color: none;
-  text-decoration: none;
-}
-
-.routerLink:active {
-  color: none;
-}
 </style>

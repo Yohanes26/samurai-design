@@ -224,7 +224,7 @@ export default {};
   border-radius: 10px;
 }
 
-.boxSubCard:hover {
+.boxSubCard:hover, .boxSubCard:active {
   .subCard {
     transform: translate3d(0, -50px, 0);
     transition: transform 0.8s;

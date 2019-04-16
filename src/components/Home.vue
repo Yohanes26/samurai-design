@@ -83,7 +83,7 @@
             </div>
           </div>
           <div class="boxSubTitles">
-            <h1 class="titleCard">VUE.JS Components</h1>
+            <h1 class="titleCard">Vue.JS Components</h1>
             <div class="boxBadges">
               <i class="eachBadges free">Free</i>
               <i class="eachBadges paid">Paid</i>
@@ -105,7 +105,7 @@
             </div>
           </div>
           <div class="boxSubTitles">
-            <h1 class="titleCard">Angular7 DashBoard</h1>
+            <h1 class="titleCard">Angular 7 DashBoard</h1>
             <div class="boxBadges">
               <i class="eachBadges free">Free</i>
               <i class="eachBadges paid">Paid</i>
@@ -127,7 +127,7 @@
             </div>
           </div>
           <div class="boxSubTitles">
-            <h1 class="titleCard">Angular7 Components</h1>
+            <h1 class="titleCard">Angular 7 Components</h1>
             <div class="boxBadges">
               <i class="eachBadges free">Free</i>
               <i class="eachBadges paid">Paid</i>

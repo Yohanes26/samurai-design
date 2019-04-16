@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1 class="title">All Plug And Play</h1>
+    <head-home></head-home>
+    <h1 class="title">All Designs Plug And Play</h1>
     <div class="boxCards">
       <div class="card">
         <router-link class="routerLink" to="/dashboard">
@@ -18,8 +19,8 @@
           <div class="boxSubTitles">
             <h1 class="titleCard">DashBoard</h1>
             <div class="boxBadges">
-              <i class="eachBadges">Free</i>
-              <i class="eachBadges">Paid</i>
+              <i class="eachBadges free">Free</i>
+              <i class="eachBadges paid">Paid</i>
             </div>
           </div>
         </router-link>
@@ -40,8 +41,8 @@
           <div class="boxSubTitles">
             <h1 class="titleCard">Components</h1>
             <div class="boxBadges">
-              <i class="eachBadges">Free</i>
-              <i class="eachBadges">Paid</i>
+              <i class="eachBadges free">Free</i>
+              <i class="eachBadges paid">Paid</i>
             </div>
           </div>
         </router-link>
@@ -62,8 +63,8 @@
           <div class="boxSubTitles">
             <h1 class="titleCard">Vue.JS DashBoard</h1>
             <div class="boxBadges">
-              <i class="eachBadges">Free</i>
-              <i class="eachBadges">Paid</i>
+              <i class="eachBadges free">Free</i>
+              <i class="eachBadges paid">Paid</i>
             </div>
           </div>
         </router-link>
@@ -84,8 +85,8 @@
           <div class="boxSubTitles">
             <h1 class="titleCard">VUE.JS Components</h1>
             <div class="boxBadges">
-              <i class="eachBadges">Free</i>
-              <i class="eachBadges">Paid</i>
+              <i class="eachBadges free">Free</i>
+              <i class="eachBadges paid">Paid</i>
             </div>
           </div>
         </router-link>
@@ -106,8 +107,8 @@
           <div class="boxSubTitles">
             <h1 class="titleCard">Angular7 DashBoard</h1>
             <div class="boxBadges">
-              <i class="eachBadges">Free</i>
-              <i class="eachBadges">Paid</i>
+              <i class="eachBadges free">Free</i>
+              <i class="eachBadges paid">Paid</i>
             </div>
           </div>
         </router-link>
@@ -128,8 +129,8 @@
           <div class="boxSubTitles">
             <h1 class="titleCard">Angular7 Components</h1>
             <div class="boxBadges">
-              <i class="eachBadges">Free</i>
-              <i class="eachBadges">Paid</i>
+              <i class="eachBadges free">Free</i>
+              <i class="eachBadges paid">Paid</i>
             </div>
           </div>
         </router-link>
@@ -150,8 +151,8 @@
           <div class="boxSubTitles">
             <h1 class="titleCard">React DashBoard</h1>
             <div class="boxBadges">
-              <i class="eachBadges">Free</i>
-              <i class="eachBadges">Paid</i>
+              <i class="eachBadges free">Free</i>
+              <i class="eachBadges paid">Paid</i>
             </div>
           </div>
         </router-link>
@@ -172,8 +173,8 @@
           <div class="boxSubTitles">
             <h1 class="titleCard">React Components</h1>
             <div class="boxBadges">
-              <i class="eachBadges">Free</i>
-              <i class="eachBadges">Paid</i>
+              <i class="eachBadges free">Free</i>
+              <i class="eachBadges paid">Paid</i>
             </div>
           </div>
         </router-link>
@@ -183,7 +184,12 @@
 </template>
 
 <script>
-export default {};
+import HeadHome from './HeadHome.vue';
+export default {
+  components: {
+    'head-home': HeadHome,
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -240,12 +246,18 @@ export default {};
   display: inline-block;
   width: fit-content;
   left: 0px;
+  font-family: 'Crimson Text', serif;
+  color: #a4a4a4;
 }
 
 .title {
   width: fit-content;
   margin: 0 auto;
   margin-top: 40px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #FFFFFF;
 }
 
 .imageStyle {
@@ -264,12 +276,22 @@ export default {};
 .eachBadges {
   margin-left: 10px;
   margin-right: 10px;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 .boxBadges {
   width: 150px;
   display: flex;
   justify-content: space-between;
+}
+
+.free {
+  color: #5cce4d;
+}
+
+.paid {
+  color: #455fd1;
 }
 
 @media only screen and (max-width: 700px) {
@@ -298,6 +320,10 @@ export default {};
     width: fit-content;
     margin-right: 25px;
     margin-left: 25px;
+  }
+
+  .title {
+    font-size: 1.8rem;
   }
 
 }

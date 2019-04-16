@@ -17,8 +17,10 @@
           </div>
           <div class="boxSubTitles">
             <h1 class="titleCard">DashBoard</h1>
-            <i class="eachBadges">Free</i>
-            <i class="eachBadges">Paid</i>
+            <div class="boxBadges">
+              <i class="eachBadges">Free</i>
+              <i class="eachBadges">Paid</i>
+            </div>
           </div>
         </router-link>
       </div>
@@ -37,8 +39,10 @@
           </div>
           <div class="boxSubTitles">
             <h1 class="titleCard">Components</h1>
-            <i class="eachBadges">Free</i>
-            <i class="eachBadges">Paid</i>
+            <div class="boxBadges">
+              <i class="eachBadges">Free</i>
+              <i class="eachBadges">Paid</i>
+            </div>
           </div>
         </router-link>
       </div>
@@ -57,8 +61,10 @@
           </div>
           <div class="boxSubTitles">
             <h1 class="titleCard">Vue.JS DashBoard</h1>
-            <i class="eachBadges">Free</i>
-            <i class="eachBadges">Paid</i>
+            <div class="boxBadges">
+              <i class="eachBadges">Free</i>
+              <i class="eachBadges">Paid</i>
+            </div>
           </div>
         </router-link>
       </div>
@@ -77,8 +83,10 @@
           </div>
           <div class="boxSubTitles">
             <h1 class="titleCard">VUE.JS Components</h1>
-            <i class="eachBadges">Free</i>
-            <i class="eachBadges">Paid</i>
+            <div class="boxBadges">
+              <i class="eachBadges">Free</i>
+              <i class="eachBadges">Paid</i>
+            </div>
           </div>
         </router-link>
       </div>
@@ -97,8 +105,10 @@
           </div>
           <div class="boxSubTitles">
             <h1 class="titleCard">Angular7 DashBoard</h1>
-            <i class="eachBadges">Free</i>
-            <i class="eachBadges">Paid</i>
+            <div class="boxBadges">
+              <i class="eachBadges">Free</i>
+              <i class="eachBadges">Paid</i>
+            </div>
           </div>
         </router-link>
       </div>
@@ -117,8 +127,10 @@
           </div>
           <div class="boxSubTitles">
             <h1 class="titleCard">Angular7 Components</h1>
-            <i class="eachBadges">Free</i>
-            <i class="eachBadges">Paid</i>
+            <div class="boxBadges">
+              <i class="eachBadges">Free</i>
+              <i class="eachBadges">Paid</i>
+            </div>
           </div>
         </router-link>
       </div>
@@ -137,8 +149,10 @@
           </div>
           <div class="boxSubTitles">
             <h1 class="titleCard">React DashBoard</h1>
-            <i class="eachBadges">Free</i>
-            <i class="eachBadges">Paid</i>
+            <div class="boxBadges">
+              <i class="eachBadges">Free</i>
+              <i class="eachBadges">Paid</i>
+            </div>
           </div>
         </router-link>
       </div>
@@ -157,8 +171,10 @@
           </div>
           <div class="boxSubTitles">
             <h1 class="titleCard">React Components</h1>
-            <i class="eachBadges">Free</i>
-            <i class="eachBadges">Paid</i>
+            <div class="boxBadges">
+              <i class="eachBadges">Free</i>
+              <i class="eachBadges">Paid</i>
+            </div>
           </div>
         </router-link>
       </div>
@@ -196,6 +212,7 @@ export default {};
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  font-size: 0.6rem;
 }
 
 .subCard {
@@ -247,6 +264,35 @@ export default {};
 .eachBadges {
   float: right;
   display: inline-block;
+}
+
+@media only screen and (max-width: 700px) {
+  .boxCards {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+    margin: 80px auto;
+  }
+
+  .boxSubTitles {
+    flex-direction: column;
+  }
+
+  .boxBadges {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .eachBadges {
+    width: fit-content;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
 }
 </style>
 

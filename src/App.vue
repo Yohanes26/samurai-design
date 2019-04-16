@@ -18,9 +18,7 @@ body {
   width: 100wh;
   height: 100vh;
   margin: 0px;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: _drhg_,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Arial,sans-serif;
   background-color: #eee; 
 }
 

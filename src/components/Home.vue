@@ -212,7 +212,7 @@ export default {};
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
 .subCard {
@@ -262,8 +262,14 @@ export default {};
 }
 
 .eachBadges {
-  float: right;
-  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.boxBadges {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 700px) {
@@ -275,6 +281,7 @@ export default {};
   .card {
     width: 80%;
     margin: 80px auto;
+    font-size: 0.6rem;
   }
 
   .boxSubTitles {

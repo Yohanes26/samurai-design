@@ -4,44 +4,162 @@
     <div class="boxCards">
       <div class="card">
         <router-link class="routerLink" to="/dashboard">
-          <div class="subCard">Imagem</div>
-          <h1 class="routerLink">DashBoard</h1>
-          <i>Free</i>
+          <div class="boxSubCard">
+            <div class="subCard">
+              <img
+                class="imageStyle"
+                src="../assets/example.jpg"
+                alt="exemplo"
+                width="100%"
+                height="100%"
+              >
+            </div>
+          </div>
+          <div class="boxSubTitles">
+            <h1 class="titleCard">DashBoard</h1>
+            <i class="eachBadges">Free</i>
+            <i class="eachBadges">Paid</i>
+          </div>
         </router-link>
       </div>
       <div class="card">
         <router-link class="routerLink" to="/components">
-          <h1 class="routerLink">Components</h1>
+          <div class="boxSubCard">
+            <div class="subCard">
+              <img
+                class="imageStyle"
+                src="../assets/example.jpg"
+                alt="exemplo"
+                width="100%"
+                height="100%"
+              >
+            </div>
+          </div>
+          <div class="boxSubTitles">
+            <h1 class="titleCard">Components</h1>
+            <i class="eachBadges">Free</i>
+            <i class="eachBadges">Paid</i>
+          </div>
         </router-link>
       </div>
       <div class="card">
         <router-link class="routerLink" to="/vue-dashboard">
-          <h1 class="routerLink">Vue.JS DashBoard</h1>
+          <div class="boxSubCard">
+            <div class="subCard">
+              <img
+                class="imageStyle"
+                src="../assets/example.jpg"
+                alt="exemplo"
+                width="100%"
+                height="100%"
+              >
+            </div>
+          </div>
+          <div class="boxSubTitles">
+            <h1 class="titleCard">Vue.JS DashBoard</h1>
+            <i class="eachBadges">Free</i>
+            <i class="eachBadges">Paid</i>
+          </div>
         </router-link>
       </div>
       <div class="card">
         <router-link class="routerLink" to="/vue-components">
-          <h1 class="routerLink">VUE.JS Components</h1>
+          <div class="boxSubCard">
+            <div class="subCard">
+              <img
+                class="imageStyle"
+                src="../assets/example.jpg"
+                alt="exemplo"
+                width="100%"
+                height="100%"
+              >
+            </div>
+          </div>
+          <div class="boxSubTitles">
+            <h1 class="titleCard">VUE.JS Components</h1>
+            <i class="eachBadges">Free</i>
+            <i class="eachBadges">Paid</i>
+          </div>
         </router-link>
       </div>
       <div class="card">
         <router-link class="routerLink" to="/angular-dashboard">
-          <h1 class="routerLink">Angular7 DashBoard</h1>
+          <div class="boxSubCard">
+            <div class="subCard">
+              <img
+                class="imageStyle"
+                src="../assets/example.jpg"
+                alt="exemplo"
+                width="100%"
+                height="100%"
+              >
+            </div>
+          </div>
+          <div class="boxSubTitles">
+            <h1 class="titleCard">Angular7 DashBoard</h1>
+            <i class="eachBadges">Free</i>
+            <i class="eachBadges">Paid</i>
+          </div>
         </router-link>
       </div>
       <div class="card">
         <router-link class="routerLink" to="/angular-components">
-          <h1 class="routerLink">Angular7 Components</h1>
+          <div class="boxSubCard">
+            <div class="subCard">
+              <img
+                class="imageStyle"
+                src="../assets/example.jpg"
+                alt="exemplo"
+                width="100%"
+                height="100%"
+              >
+            </div>
+          </div>
+          <div class="boxSubTitles">
+            <h1 class="titleCard">Angular7 Components</h1>
+            <i class="eachBadges">Free</i>
+            <i class="eachBadges">Paid</i>
+          </div>
         </router-link>
       </div>
       <div class="card">
         <router-link class="routerLink" to="/react-dashboard">
-          <h1 class="routerLink">React DashBoard</h1>
+          <div class="boxSubCard">
+            <div class="subCard">
+              <img
+                class="imageStyle"
+                src="../assets/example.jpg"
+                alt="exemplo"
+                width="100%"
+                height="100%"
+              >
+            </div>
+          </div>
+          <div class="boxSubTitles">
+            <h1 class="titleCard">React DashBoard</h1>
+            <i class="eachBadges">Free</i>
+            <i class="eachBadges">Paid</i>
+          </div>
         </router-link>
       </div>
       <div class="card">
         <router-link class="routerLink" to="/react-components">
-          <h1 class="routerLink">React Components</h1>
+          <div class="boxSubCard">
+            <div class="subCard">
+              <img
+                class="imageStyle"
+                src="../assets/example.jpg"
+                alt="exemplo"
+                width="100%"
+                height="100%"
+              >
+            </div>
+          </div>
+          <div class="boxSubTitles">
+            <h1 class="titleCard">React Components</h1>
+            <i class="eachBadges">Free</i>
+            <i class="eachBadges">Paid</i>
+          </div>
         </router-link>
       </div>
     </div>
@@ -52,7 +170,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .boxCards {
   height: 100%;
   width: 100%;
@@ -62,14 +180,14 @@ export default {};
 }
 .card {
   width: 40%;
-  height: 500px;
+  height: 400px;
   border-color: #f6f6f6;
-  margin-top: 40px;
-  border-radius: 6px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  border-radius: 10px;
   color: #333;
   background: #fff;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 35px 7px rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -80,19 +198,55 @@ export default {};
   padding-left: 15px;
 }
 
-.subCard:hover {
-  -webkit-transform: translate3d(0, -20px, 0);
-  transform: translate3d(0, -20px, 0);
+.subCard {
+  width: 90%;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: -30px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.boxSubCard:hover {
+  .subCard {
+    transform: translate3d(0, -50px, 0);
+    transition: transform 0.8s;
+  }
 }
 
 .routerLink {
   text-decoration: none;
 }
 
+.titleCard {
+  margin-top: 10px;
+  display: inline-block;
+  width: fit-content;
+  left: 0px;
+}
+
 .title {
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 40px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.imageStyle {
+  border-radius: 10px;
+}
+
+.boxSubTitles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.eachBadges {
+  float: right;
+  display: inline-block;
 }
 </style>
 

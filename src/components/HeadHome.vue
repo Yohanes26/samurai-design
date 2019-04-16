@@ -33,6 +33,10 @@
 
 .ulMenu {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float:right;
 }
 
 @media only screen and (max-width: 700px) {

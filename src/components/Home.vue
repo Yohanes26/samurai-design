@@ -202,7 +202,7 @@ export default {
 }
 .card {
   width: 40%;
-  height: 400px;
+  height: fit-content;
   border-color: #f6f6f6;
   margin-top: 80px;
   margin-bottom: 40px;
@@ -228,12 +228,13 @@ export default {
   margin-top: -30px;
   background-color: black;
   border-radius: 10px;
+  transition: 1.4s;
 }
 
 .boxSubCard:hover, .boxSubCard:active {
   .subCard {
     transform: translate3d(0, -50px, 0);
-    transition: transform 0.8s;
+    transition: transform 1.4s;
   }
 }
 
@@ -278,6 +279,9 @@ export default {
   margin-right: 10px;
   font-weight: 900;
   font-size: 1.2rem;
+  padding: 2px 10px;
+  border-radius: 15px;
+  transition: 2s;
 }
 
 .boxBadges {
@@ -290,8 +294,18 @@ export default {
   color: #5cce4d;
 }
 
+.free:hover {
+  background-color: #5cce4dda;
+  color: #fff;
+}
+
 .paid {
   color: #455fd1;
+}
+
+.paid:hover {
+  background-color: #455fd1de;
+  color: #fff;
 }
 
 @media only screen and (max-width: 700px) {
@@ -312,6 +326,7 @@ export default {
 
   .boxBadges {
     width: 100%;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
   }
